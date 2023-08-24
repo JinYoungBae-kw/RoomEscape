@@ -27,7 +27,7 @@
     transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
     width: 20%; /* 버튼의 너비를 조정 */
     height: 5%; /* 버튼의 높이를 조정 */
-    font-size: 30%; /* 버튼 텍스트 크기 조정 */
+    font-size: 120%; /* 버튼 텍스트 크기 조정 */
   }
 
   .input-box {

@@ -4,17 +4,46 @@
   overflow: hidden;
 }
 
-.slider-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .slider-button {
   display: block;
   margin-top: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%; /* 가운데 정렬을 위해 왼쪽 위치를 50%로 설정 */
+  transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
+  width: 110px; /* 버튼의 너비를 조정 */
+  height: 40px; /* 버튼의 높이를 조정 */
+  font-size: 20px; /* 버튼 텍스트 크기 조정 */
 }
+
+#prev-button {
+  transform: translateX(-150%); /* 왼쪽으로 이동해서 보이지 않게 설정 */
+}
+
+#next-button {
+  transform: translateX(50%); /* 이미지의 가운데에 위치 */
+}
+
+.input-box {
+  display: none;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 30px;
+  padding: 5px;
+}
+
+.feedback {
+  display: none;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+}
+
 
 @media (max-width: 767px){
   .img_responsive{

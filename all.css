@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-#next-button {
+.slider-button {
   display: block;
   margin-top: 10px;
 }

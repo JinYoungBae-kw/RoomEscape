@@ -1,4 +1,4 @@
-const images = ["image/backscreen1.jpg", "image/backscreen2.jpg", "image/backscreen3.jpg", "image/X.jpg"]; // 이미지 파일명 리스트
+/*const images = ["image/backscreen1.jpg", "image/backscreen2.jpg", "image/backscreen3.jpg", "image/X.jpg"]; // 이미지 파일명 리스트
 let currentIndex = 0;
 let answer = 0;
 let xanwer = 0;
@@ -72,4 +72,4 @@ function updateInputVisibility() {
     } else {
         inputBox.style.display = "none";
     }
-}
+}*/

@@ -1,5 +1,7 @@
-const images = ["image/backscreen1.jpg", "image/backscreen2.jpg", "image/backscreen3.jpg"]; // 이미지 파일명 리스트
+const images = ["image/backscreen1.jpg", "image/backscreen2.jpg", "image/backscreen3.jpg", "image/X.jpg"]; // 이미지 파일명 리스트
 let currentIndex = 0;
+let answer = 0;
+let xanwer = 0;
 
 const currentImage = document.getElementById("current-image");
 const prevButton = document.getElementById("prev-button");
@@ -18,25 +20,37 @@ prevButton.addEventListener("click", () => {
     updateInputVisibility(); // 입력창 상태 업데이트
 });
 
-nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    currentImage.src = images[currentIndex];
-    currentImage.alt = "Image " + (currentIndex + 1);
-    updateButtons(); // 버튼 상태 업데이트
-    updateInputVisibility(); // 입력창 상태 업데이트
-});
-
 inputBox.addEventListener("input", () => {
-  if (currentIndex === 1) { // 두 번째 이미지에서만 입력 결과에 따라 버튼 활성/비활성화
+  if (currentIndex === 1) { 
       if (inputBox.value.toLowerCase() === "성공") {
-          nextButton.disabled = false;
-          feedbackMessage.style.display = "none";
-      } else {
-          nextButton.disabled = true;
-          feedbackMessage.style.display = "block";
+        answer = 1;
       }
   }
 });
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex === 1) {
+    if (answer === 1) {
+      currentIndex = (currentIndex + 1) % images.length;
+      currentImage.src = images[currentIndex];
+      updateButtons(); // 버튼 상태 업데이트
+      updateInputVisibility(); // 입력창 상태 업데이트
+    } else {
+      xanwer = 3;
+      currentImage.src = images[xanwer];
+      updateButtons(); // 버튼 상태 업데이트
+      updateInputVisibility(); // 입력창 상태 업데이트
+    }
+  } else {
+    currentIndex = (currentIndex + 1) % images.length;
+    currentImage.src = images[currentIndex];
+
+    updateButtons(); // 버튼 상태 업데이트
+    updateInputVisibility(); // 입력창 상태 업데이트
+  }
+});
+
+
 
 function updateButtons() {
     if (currentIndex === 0) {
@@ -50,22 +64,12 @@ function updateButtons() {
     } else {
         nextButton.style.visibility = "visible";
     }
-
-    if (currentIndex === 0) { // 이미지1에서는 항상 다음 버튼 활성화
-      nextButton.disabled = false;
-      feedbackMessage.style.display = "none";
-    } else if (currentIndex === 1) {
-      nextButton.disabled = true;
-      feedbackMessage.style.display = "none";
-    }
 }
 
 function updateInputVisibility() {
     if (currentIndex === 1) {
         inputBox.style.display = "block"; // 두 번째 이미지에서 입력창 보이게
-        feedbackMessage.style.display = "none";
     } else {
         inputBox.style.display = "none";
-        feedbackMessage.style.display = "none";
     }
 }

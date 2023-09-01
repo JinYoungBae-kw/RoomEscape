@@ -9,33 +9,36 @@
 
 <body>
   <div style="text-align: center;">
-    <h1>나는 여느 때와 다름없이 이곳을 이동하고<br>
-      있었다. . . 저벅저벅</h1>
-    <img src="image/pic1.png" class="img_responsive">
-    <h1>갑자기 저 멀리서 하늘이 밝아지더니<br>
-      구름 사이로 강한 빛이 내리쬐기<br>
-      시작했는데.<br>
-      .<br>
-      .<br>
-      '저게 뭐지?'<br><br>
-      호기심이 강한 나는 재빠르게 그곳으로<br>
-      이동하기 시작하였다.
-    </h1>
-    동해문화예술관으로 이동해주세요.
+    <h1>간판으로 유추해낼 수 있는<br>
+      광운대학교 OO관은 무엇일까?</h1>
   </div>
   <button id="prev-button" class="slider-button"><</button>
   <button id="next-button" class="slider-button">></button>
+  <button id="hint-button" class="hint-button">?</button>
+  <input type="text" id="text-input" class="input-box">
+
   <script>
     // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
     document.getElementById("next-button").addEventListener("click", function() {
-      // index2.html로 이동합니다.
-      window.location.href = "index3.html";
+      var userInput = document.getElementById("text-input").value.toLowerCase();
+      if (userInput === "복지") {
+        // "비마"를 입력한 경우 index5.html로 이동합니다.
+        window.location.href = "index8.html";
+      } else {
+        // 다른 답을 입력한 경우 wrong.html로 이동합니다.
+        window.location.href = "wrong.html";
+      }
     });
 
     // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
     document.getElementById("prev-button").addEventListener("click", function() {
       // index.html로 이동합니다.
-      window.location.href = "index.html";
+      window.location.href = "index6.html";
+    });
+
+    document.getElementById("hint-button").addEventListener("click", function() {
+      // index.html로 이동합니다.
+      window.location.href = "hint2.html";
     });
   </script>
 

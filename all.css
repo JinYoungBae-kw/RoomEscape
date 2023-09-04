@@ -5,6 +5,10 @@
     position: relative;
   }
 
+  .line-height {
+    line-height: 0.6; /* 원하는 줄 간격으로 조절 (예: 1.2로 설정) */
+  }
+
   .img_responsive {
     width: 100%; /* 화면 너비에 맞게 이미지 너비 설정 */
     height: auto; /* 이미지 높이 자동으로 조정 */
@@ -18,6 +22,7 @@
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
+    color: black;
   }
 
   #next-button {
@@ -28,6 +33,7 @@
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
+    color: black;
   }
 
   .slider-button {
@@ -38,6 +44,7 @@
     width: 15%;
     height: 5%;
     pointer-events: auto;
+    color: black;
   }
 
   .hint-button {
@@ -48,6 +55,7 @@
     width: 5%; /* 너비를 늘림 */
     height: auto; /* 높이 자동으로 조정 */
     pointer-events: auto;
+    color: black;
   }
 
   .input-box {
@@ -64,9 +72,5 @@
 
   .red-text {
     color: red;
-  }
-
-  .small-text {
-    font-size: 60%;
   }
 }

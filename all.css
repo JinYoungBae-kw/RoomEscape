@@ -14,8 +14,8 @@
   bottom: 5%; /* 하단에 배치 */
   left: 30%; /* 좌측에 배치 */
   transform: none; /* 변환 해제 */
-  width: 15%; /* 너비를 늘림 */
-  height: 5%; /* 높이 자동으로 조정 */
+  width: 20%; /* 너비를 늘림 */
+  height: 10%; /* 높이 자동으로 조정 */
   font-size: 110%; /* 버튼 텍스트 크기 조정 */
 }
 
@@ -46,8 +46,8 @@
     bottom: 5%; /* 하단에 배치 */
     right: 30%; /* 우측에 배치 */
     transform: none; /* 변환 해제 */
-    width: 15%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    width: 20%; /* 너비를 늘림 */
+    height: 10%; /* 높이 자동으로 조정 */
     pointer-events: auto;
   }
 

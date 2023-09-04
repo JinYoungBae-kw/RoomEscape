@@ -1,27 +1,5 @@
-/* 공통 스타일 */
-.slider-button, .hint-button, .input-box {
-  display: block;
-  position: absolute;
-  font-size: 110%;
-  color: black;
-}
-
-
-/* 이전 버튼 스타일 업데이트 */
-#prev-button {
-  display: block;
-  position: absolute;
-  bottom: 5%; /* 하단에 배치 */
-  left: 30%; /* 좌측에 배치 */
-  transform: none; /* 변환 해제 */
-  width: 20%; /* 너비를 늘림 */
-  height: 10%; /* 높이 자동으로 조정 */
-  font-size: 110%; /* 버튼 텍스트 크기 조정 */
-}
-
-
 /* 모바일 화면에서의 스타일 */
-@media (max-width: 1000px) {
+@media(min-width: 576px) {
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
   }
@@ -43,13 +21,14 @@
 
   .slider-button {
     position: absolute;
-    bottom: 5%; /* 하단에 배치 */
-    right: 30%; /* 우측에 배치 */
-    transform: none; /* 변환 해제 */
-    width: 20%; /* 너비를 늘림 */
-    height: 10%; /* 높이 자동으로 조정 */
+    bottom: 5%;
+    left: 50%; /* 가운데 정렬을 위해 왼쪽 50%로 설정 */
+    transform: translateX(-50%); /* 가운데 정렬을 위해 가로 방향으로 -50% 이동 */
+    width: 20%;
+    height: 10%;
     pointer-events: auto;
   }
+
 
   .input-box {
     bottom: 10%; /* 하단에 배치 */

@@ -12,35 +12,31 @@
 
 <body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Yeon Sung', cursive;">
-  <div style="text-align: center; padding: 0% 10%;">
-    <h2>나는 그곳에서 <span class="red-text">날개 달린 말</span><br>
-      한 마리를 볼 수 있었다.<br>
-    </h2>
-    <img src="image/pic5.png" class="img_responsive">
-    <h2><span class="red-text">그 순간!!</span><br><br>
-      "연촌에서 모두의 뜻이 하나로<br>
-      모일 때,<br>
-      <span class="red-text">진정한 진리</span>를 얻을 것이다."
-    </h2>
-    <img src="image/pic3.png" class="img_responsive">
-    <h2>이 소식은 삽시간에 전국<br>
-      각지로 퍼져 연촌으로 사람들이<br>
-      모이기 시작하였다.
-    </h2>
+  <div style="text-align: center; margin-top: 50%; padding: 0% 10%;">
+    <img src="image/pic7.png" class="img_responsive">
+    <h2>이 빈칸의 단어를 찾아서 한 번<br>
+      지도를 완성 시켜보자!</h2>
   </div>
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
+  <input type="text" id="text-input" class="input-box" style="margin-top: 45%">
+
   <script>
     // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
     document.getElementById("next-button").addEventListener("click", function() {
-      // index2.html로 이동합니다.
-      window.location.href = "index6.html";
+      var userInput = document.getElementById("text-input").value.toLowerCase();
+      if (userInput === "복지") {
+        window.location.href = "index10.html";
+      } else {
+        // 다른 답을 입력한 경우 wrong2.html로 이동합니다.
+        window.location.href = "wrong3.html";
+      }
     });
 
     // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
     document.getElementById("prev-button").addEventListener("click", function() {
       // index.html로 이동합니다.
-      window.location.href = "index4.html";
+      window.location.href = "index8.html";
     });
   </script>
 </body>

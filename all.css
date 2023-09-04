@@ -59,11 +59,13 @@
   }
 
   .input-box {
-    bottom: 10%; /* 하단에 배치 */
+    position: fixed;
+    top: 35%; /* 하단에 배치 */
     left: 50%; /* 가운데 정렬 */
     transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
-    width: 60%; /* 너비 조정 */
-    height: auto; /* 높이 자동으로 조정 */
+    width: 80%; /* 너비 조정 */
+    height: 3%; /* 높이 자동으로 조정 */
+    color: black;
   }
 
   .content {

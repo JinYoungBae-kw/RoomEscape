@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방탈출</title>
+</head>
+
+<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Yeon Sung', cursive;">
+  <div style="text-align: center; padding: 0% 10%;">
+    <h2>'말에 귀 기울여..?<br>
+      행운의 씨앗..?'<br><br>
+      '이게 무슨 뜻입니까?!'
+    </h2>
+    <img src="image/pic19.png" class="img_responsive">
+    <h2>
+      "뜻을 모은다는 것이 본인의 뜻만<br>
+      내세우면 어찌 그것이 모이는<br>
+      것이겠느냐.. 그것은.."<br><br>
+      그 말을 들은 나는 부끄러워<br>
+      아무 것도 할 수 없었다...
+    </h2>
+  </div>
+  <button id="prev-button" class="slider-button">이전</button>
+  <button id="next-button" class="slider-button">다음</button>
+  <script>
+    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("next-button").addEventListener("click", function() {
+      // index2.html로 이동합니다.
+      window.location.href = "index23.html";
+    });
+
+    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("prev-button").addEventListener("click", function() {
+      // index.html로 이동합니다.
+      window.location.href = "index21.html";
+    });
+  </script>
+</body>
+
+</html>

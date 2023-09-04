@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방탈출</title>
+</head>
+
+<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Yeon Sung', cursive;">
+  <div style="text-align: center; padding: 0% 10%;">
+    <h2>엇?!<br><br>
+    인파 속으로 어떤 사람이 누군갈<br>
+    부축하며 나에게 오고 있다.
+    </h2>
+    <img src="image/pic9.png" class="img_responsive">
+    <h2>"제 친구가 사람 사이에서 넘어져<br>
+      심한 부상을 당했어요.<br><br>
+      근처에 <span class="red-text">약</span>과 <span class="red-text">휴식</span>을 취할 수 있는<br>
+      공간이 있을까요?"<br><br>
+      한 번 지도를 확인해볼까?
+    </h2>
+  </div>
+  <button id="prev-button" class="slider-button">이전</button>
+  <button id="next-button" class="slider-button">다음</button>
+  <script>
+    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("next-button").addEventListener("click", function() {
+      // index2.html로 이동합니다.
+      window.location.href = "index12.html";
+    });
+
+    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("prev-button").addEventListener("click", function() {
+      // index.html로 이동합니다.
+      window.location.href = "index10.html";
+    });
+  </script>
+</body>
+
+</html>

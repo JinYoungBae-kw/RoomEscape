@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방탈출</title>
+</head>
+
+<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Yeon Sung', cursive;">
+  <div style="text-align: center; padding: 0% 10%;">
+    <h2>'에잇!<br>
+      역시 말이 내 말을 들어줄 리가 없나..<br>
+      어떡하지.. 큰일이다..'<br><br>
+      그렇게 돌아가려는 순간,<br><br>
+      말은 조광운 동상의 뒷 부분을<br>
+      쳐다보는데,<br>
+      글자가 조금 특이한 것 같다.
+    </h2>
+    <img src="image/pic17.png" class="img_responsive">
+  </div>
+  <button id="prev-button" class="slider-button">이전</button>
+  <button id="next-button" class="slider-button">다음</button>
+  <script>
+    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("next-button").addEventListener("click", function() {
+      // index2.html로 이동합니다.
+      window.location.href = "index21.html";
+    });
+
+    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    document.getElementById("prev-button").addEventListener("click", function() {
+      // index.html로 이동합니다.
+      window.location.href = "index19.html";
+    });
+  </script>
+</body>
+
+</html>

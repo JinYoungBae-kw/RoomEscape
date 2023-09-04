@@ -2,6 +2,7 @@
 @media(max-width: 1000px) {
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
+    position: relative;
   }
 
   .img_responsive {
@@ -11,7 +12,7 @@
 
   #prev-button {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 2%; /* 하단에 배치 */
     left: 31%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
@@ -21,7 +22,7 @@
 
   #next-button {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 2%; /* 하단에 배치 */
     left: 51%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
@@ -30,7 +31,7 @@
   }
 
   .slider-button {
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     left: 50%; /* 가운데 정렬을 위해 왼쪽 50%로 설정 */
     transform: translateX(-50%); /* 가운데 정렬을 위해 가로 방향으로 -50% 이동 */

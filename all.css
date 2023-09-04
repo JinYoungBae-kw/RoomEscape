@@ -5,15 +5,16 @@
   font-size: 110%;
 }
 
+
 /* 이전 버튼 스타일 업데이트 */
 #prev-button {
   display: block;
   position: absolute;
   bottom: 5%; /* 하단에 배치 */
-  left: 5%; /* 좌측에 배치 */
+  left: 30%; /* 좌측에 배치 */
   transform: none; /* 변환 해제 */
-  width: 5%; /* 너비를 늘림 */
-  height: auto; /* 높이 자동으로 조정 */
+  width: 15%; /* 너비를 늘림 */
+  height: 5%; /* 높이 자동으로 조정 */
   font-size: 110%; /* 버튼 텍스트 크기 조정 */
 }
 
@@ -42,10 +43,10 @@
   .slider-button {
     position: absolute;
     bottom: 5%; /* 하단에 배치 */
-    right: 5%; /* 우측에 배치 */
+    right: 30%; /* 우측에 배치 */
     transform: none; /* 변환 해제 */
-    width: 5%; /* 너비를 늘림 */
-    height: auto; /* 높이 자동으로 조정 */
+    width: 15%; /* 너비를 늘림 */
+    height: 5%; /* 높이 자동으로 조정 */
     pointer-events: auto;
   }
 

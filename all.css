@@ -21,7 +21,7 @@
 
 
 /* 모바일 화면에서의 스타일 */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
   }

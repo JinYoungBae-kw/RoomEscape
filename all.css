@@ -17,22 +17,26 @@
   #prev-button {
     display: block;
     position: fixed;
-    bottom: 2%; /* 하단에 배치 */
+    bottom: 0; /* 하단에 배치 */
     left: 31%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
+    padding: 10px 0; /* 버튼 위아래 여백을 조절하세요 */
+    text-align: center;
     color: black;
   }
 
   #next-button {
     display: block;
     position: fixed;
-    bottom: 2%; /* 하단에 배치 */
+    bottom: 0; /* 하단에 배치 */
     left: 51%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
+    padding: 10px 0; /* 버튼 위아래 여백을 조절하세요 */
+    text-align: center;
     color: black;
   }
 

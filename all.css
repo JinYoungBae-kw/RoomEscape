@@ -3,10 +3,9 @@
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
     position: relative;
-  }
-
-  .line-height {
-    line-height: 0.6; /* 원하는 줄 간격으로 조절 (예: 1.2로 설정) */
+    background-image: url('image/backscreen-all5.png');
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Yeon Sung', cursive;
   }
 
   .img_responsive {
@@ -14,15 +13,19 @@
     height: auto; /* 이미지 높이 자동으로 조정 */
   }
 
+  .text-container {
+    text-align: center;
+    padding: 0% 10%;
+  }
+
   #prev-button {
     display: block;
     position: fixed;
-    bottom: 0; /* 하단에 배치 */
+    bottom: 2%; /* 하단에 배치 */
     left: 31%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
-    padding: 10px 0; /* 버튼 위아래 여백을 조절하세요 */
     text-align: center;
     color: black;
   }
@@ -30,12 +33,11 @@
   #next-button {
     display: block;
     position: fixed;
-    bottom: 0; /* 하단에 배치 */
+    bottom: 2%; /* 하단에 배치 */
     left: 51%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
-    padding: 10px 0; /* 버튼 위아래 여백을 조절하세요 */
     text-align: center;
     color: black;
   }
@@ -47,17 +49,6 @@
     transform: translateX(-50%); /* 가운데 정렬을 위해 가로 방향으로 -50% 이동 */
     width: 15%;
     height: 5%;
-    pointer-events: auto;
-    color: black;
-  }
-
-  .hint-button {
-    position: absolute;
-    top: 2%; /* 하단에 배치 */
-    left: 5%; /* 좌측에 배치 */
-    transform: none; /* 변환 해제 */
-    width: 5%; /* 너비를 늘림 */
-    height: auto; /* 높이 자동으로 조정 */
     pointer-events: auto;
     color: black;
   }

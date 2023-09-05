@@ -10,11 +10,11 @@
   <title>방탈출</title>
 </head>
 
-<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Yeon Sung', cursive;">
-  <div style="text-align: center; padding: 0% 10%;">
+<body>
+  <div class="text-container">
     <img src="image/pic8.png" class="img_responsive" style="margin-top: 20%;">
-    <h2>지도를 완성하였다.<br><br>
+    <h2>
+      지도를 완성하였다.<br><br>
       서로의 뜻을 펼치기 위해서<br>
       이렇게나 많은 부스가<br>
       연촌에 있다고?!<br><br>
@@ -22,21 +22,20 @@ font-family: 'Yeon Sung', cursive;">
       혹시 모르니까 챙겨가자.
     </h2>
   </div>
+
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
+
   <script>
-    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 다음 버튼
     document.getElementById("next-button").addEventListener("click", function() {
-      // index2.html로 이동합니다.
       window.location.href = "index11.html";
     });
 
-    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      // index.html로 이동합니다.
       window.location.href = "index9.html";
     });
   </script>
 </body>
-
 </html>

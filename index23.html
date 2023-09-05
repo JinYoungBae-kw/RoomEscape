@@ -10,10 +10,10 @@
   <title>방탈출</title>
 </head>
 
-<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Yeon Sung', cursive;">
-  <div style="text-align: center; padding: 0% 10%;">
-    <h2>'제가 이 말씀을 사람들에게<br>
+<body>
+  <div class="text-container">
+    <h2>
+      '제가 이 말씀을 사람들에게<br>
       전파하여 이 상황을 빨리<br>
       진정시키겠습니다..'<br><br>
       '저희가 너무 어리석었습니다..'<br><br><br><br>
@@ -26,21 +26,20 @@ font-family: 'Yeon Sung', cursive;">
       변화하기 시작했다.
     </h2>
   </div>
+
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
+
   <script>
-    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 다음 버튼
     document.getElementById("next-button").addEventListener("click", function() {
-      // index2.html로 이동합니다.
       window.location.href = "index24.html";
     });
 
-    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      // index.html로 이동합니다.
       window.location.href = "index22.html";
     });
   </script>
 </body>
-
 </html>

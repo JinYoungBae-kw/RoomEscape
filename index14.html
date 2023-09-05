@@ -10,13 +10,15 @@
   <title>방탈출</title>
 </head>
 
-<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Yeon Sung', cursive;">
-  <div style="text-align: center; padding: 0% 10%;">
-    <h2>의료 시설에서 누군가<br>
-      수근대고 있다.</h2>
+<body>
+  <div class="text-container">
+    <h2>
+      의료 시설에서 누군가<br>
+      수근대고 있다.
+    </h2>
     <img src="image/pic12.png" class="img_responsive">
-    <h2>"아니 사람들이 왜케 많은거야..<br>
+    <h2>
+      "아니 사람들이 왜케 많은거야..<br>
       그 말의 파급력이 대단한 걸?"<br><br>
       "그 말에게 해답을 알려달라고<br>
       하고 싶다.."<br><br>
@@ -28,21 +30,20 @@ font-family: 'Yeon Sung', cursive;">
       가면 되겠는데?!'
     </h2>
   </div>
+
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
+
   <script>
-    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 다음 버튼
     document.getElementById("next-button").addEventListener("click", function() {
-      // index2.html로 이동합니다.
       window.location.href = "index15.html";
     });
 
-    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      // index.html로 이동합니다.
       window.location.href = "index13.html";
     });
   </script>
 </body>
-
 </html>

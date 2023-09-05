@@ -10,38 +10,35 @@
   <title>방탈출</title>
 </head>
 
-<body style="background-image:url('image/backscreen-all5.png'); font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Yeon Sung', cursive;">
-  <div style="text-align: center; margin-top: 50%; padding: 0% 10%;">
-    <h1>바닥에 빛으로 비추어진<br>
+<body>
+  <div class="text-container" style="margin-top: 50%;">
+    <h1>
+      바닥에 빛으로 비추어진<br>
       형상은 무엇인가?
     </h1>
   </div>
+
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
   <input type="text" id="text-input" class="input-box">
 
   <script>
-    // 다음 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    //다음 버튼
     document.getElementById("next-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "비마") {
-        // "비마"를 입력한 경우 index5.html로 이동합니다.
+        // 정답 입력 시
         window.location.href = "index5.html";
       } else {
-        // 다른 답을 입력한 경우 wrong.html로 이동합니다.
-        window.location.href = "wrong.html";
+        // 오답 입력 시
+        window.location.href = "index4-wrong.html";
       }
     });
 
-    // 이전 버튼을 클릭했을 때 이벤트 핸들러를 추가합니다.
+    // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      // index.html로 이동합니다.
       window.location.href = "index3.html";
     });
   </script>
-
-  <script src="jscript.js"></script>
 </body>
-
 </html>

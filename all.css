@@ -16,6 +16,7 @@
   .text-container {
     text-align: center;
     padding: 0% 10%;
+    color: black;
   }
 
   #prev-button {
@@ -57,7 +58,7 @@
 
   .input-box {
     position: fixed;
-    top: 35%; /* 하단에 배치 */
+    bottom: 10%; /* 하단에 배치 */
     left: 50%; /* 가운데 정렬 */
     transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
     width: 80%; /* 너비 조정 */

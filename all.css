@@ -53,12 +53,12 @@
     background-color: rgb(224, 200, 152);
     font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Stylish', sans-serif;
-    font-size: 20px; /* 원하는 크기로 조절하세요 */
+    font-size: 19px; /* 원하는 크기로 조절하세요 */
   }
 
   .input-box {
     position: fixed;
-    bottom: 10%; /* 하단에 배치 */
+    bottom: 33%; /* 하단에 배치 */
     left: 50%; /* 가운데 정렬 */
     transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
     width: 80%; /* 너비 조정 */

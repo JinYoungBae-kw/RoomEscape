@@ -1,11 +1,22 @@
 /* 모바일 화면에서의 스타일 */
 @media(max-width: 1000px) {
+  @font-face{
+    src:url("fonts/HeirofLightRegular.ttf");
+    font-family : "HeirofLightRegular";
+  }
+
+  @font-face{
+    src:url("fonts/HeirofLightBold.ttf");
+    font-family : "HeirofLightBold";
+  }
+
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
     position: relative;
-    background-image: url('image/backscreen.png');
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Stylish', sans-serif;
+    background-image: url('image/backscreen.jpg');
+    background-size: 100% 100%; /* 원본 이미지를 화면에 맞게 확장 */
+    background-repeat: no-repeat; /* 이미지 반복 없애기 */
+    background-attachment: fixed; /* 스크롤 시 배경 이미지 고정 */
   }
 
   .img_responsive {
@@ -16,6 +27,7 @@
   .text-container {
     text-align: center;
     padding: 0% 10%;
+    font-family : "HeirofLightRegular";
     color: black;
   }
 
@@ -51,21 +63,19 @@
     pointer-events: auto;
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Stylish', sans-serif;
+    font-family : "HeirofLightBold";
     font-size: 19px; /* 원하는 크기로 조절하세요 */
   }
 
   .input-box {
     position: fixed;
-    bottom: 33%; /* 하단에 배치 */
+    bottom: 15%; /* 하단에 배치 */
     left: 50%; /* 가운데 정렬 */
     transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
     width: 80%; /* 너비 조정 */
     height: 3%; /* 높이 자동으로 조정 */
     color: black;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Stylish', sans-serif;
+    font-family : "HeirofLightRegular";
   }
 
   .content {

@@ -8,33 +8,27 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 65%;">
-    <h2>
-      <span class="red-text">Q. 바닥에 빛으로<br>
-      비춰진 형상은 무엇인가?</span>
-    </h2>
+  <div class="text-container" style="margin-top: 60%">
+    <h3>
+      '저게 뭐지?'<br><br>
+      <span class="red-text">호기심</span>이 강한 나는 재빠르게<br>
+      그곳으로 이동하기 시작하였다.<br><br><br>
+      <span class="red-text">동해문화예술관</span>으로 이동해보자.
+    </h3>
   </div>
-
+  
   <button id="prev-button" class="slider-button">이전</button>
   <button id="next-button" class="slider-button">다음</button>
-  <input type="text" id="text-input" class="input-box">
 
   <script>
     //다음 버튼
     document.getElementById("next-button").addEventListener("click", function() {
-      var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "비마") {
-        // 정답 입력 시
-        window.location.href = "index5.html";
-      } else {
-        // 오답 입력 시
-        window.location.href = "index4-wrong.html";
-      }
+      window.location.href = "index3.html";
     });
 
-    // 이전 버튼
+    //이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index3.html";
+      window.location.href = "index2.html";
     });
   </script>
 </body>

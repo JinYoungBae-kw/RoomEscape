@@ -43,10 +43,7 @@
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
     font-family : "HeirofLightBold";
-    font-size: 19px; /* 원하는 크기로 조절하세요 */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 15px; /* 원하는 크기로 조절하세요 */
   }
 
   #next-button {
@@ -61,10 +58,7 @@
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
     font-family : "HeirofLightBold";
-    font-size: 19px; /* 원하는 크기로 조절하세요 */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 15px; /* 원하는 크기로 조절하세요 */
   }
 
   #start-button {
@@ -79,10 +73,7 @@
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
     font-family : "HeirofLightBold";
-    font-size: 19px; /* 원하는 크기로 조절하세요 */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 15px; /* 원하는 크기로 조절하세요 */
   }
 
   #answer-button {
@@ -91,12 +82,15 @@
     left: 50%; /* 좌측에 배치 */
     transform: translateX(-50%); /* 변환 해제 */
     width: 30%; /* 너비를 늘림 */
-    height: 4%; /* 높이 자동으로 조정 */
+    height: 5%; /* 높이 자동으로 조정 */
     pointer-events: auto;
     color: white;
     background-color: black;
     font-family : "HeirofLightBold";
     font-size: 15px; /* 원하는 크기로 조절하세요 */
+  }
+
+  .text-center {
     text-align: center;
     align-items: center;
     justify-content: center;

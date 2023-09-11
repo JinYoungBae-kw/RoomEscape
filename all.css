@@ -38,7 +38,7 @@
     left: 31%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    height: 6%; /* 높이 자동으로 조정 */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@
     left: 51%; /* 좌측에 배치 */
     transform: none; /* 변환 해제 */
     width: 15%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    height: 6%; /* 높이 자동으로 조정 */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@
     left: 50%; /* 좌측에 배치 */
     transform: translateX(-50%); /* 변환 해제 */
     width: 30%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    height: 6%; /* 높이 자동으로 조정 */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@
     left: 50%; /* 가운데 정렬을 위해 왼쪽 50%로 설정 */
     transform: translateX(-50%); /* 가운데 정렬을 위해 가로 방향으로 -50% 이동 */
     width: 15%;
-    height: 5%;
+    height: 6%;
     pointer-events: auto;
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);

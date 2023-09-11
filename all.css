@@ -40,6 +40,8 @@
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   #next-button {
@@ -51,6 +53,8 @@
     width: 15%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   #start-button {
@@ -62,6 +66,8 @@
     width: 30%; /* 너비를 늘림 */
     height: 5%; /* 높이 자동으로 조정 */
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .slider-button {
@@ -76,15 +82,12 @@
     background-color: rgb(224, 200, 152);
     font-family : "HeirofLightBold";
     font-size: 19px; /* 원하는 크기로 조절하세요 */
+    align-items: center;
+    justify-content: center;
   }
 
   .input-box {
-    position: fixed;
-    bottom: 15%; /* 하단에 배치 */
-    left: 50%; /* 가운데 정렬 */
-    transform: translateX(-50%); /* 가운데 정렬을 위한 변환 */
-    width: 80%; /* 너비 조정 */
-    height: 3%; /* 높이 자동으로 조정 */
+    width: 60%; /* 너비 조정 */
     color: black;
     font-family : "HeirofLightRegular";
   }
@@ -94,7 +97,7 @@
   }
 
   .red-text {
-    color: red;
+    color: rgb(176, 23, 23);
   }
 
   .blue-text {

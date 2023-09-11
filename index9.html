@@ -9,19 +9,17 @@
 
 <body>
   <div class="text-container" style="margin-top: 65%;">
-    <h2>
+    <h3>
       <span class="red-text">Q. 이 빈칸의 단어를 찾아서<br>
-      지도를 완성 시켜보자!</span>
-    </h2>
+      한 번 지도를 완성 시켜보자</span>
+      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
+    </h3>
   </div>
-
-  <button id="prev-button" class="slider-button">이전</button>
-  <button id="next-button" class="slider-button">다음</button>
-  <input type="text" id="text-input" class="input-box" style="margin-top: 45%">
 
   <script>
     // 다음 버튼
-    document.getElementById("next-button").addEventListener("click", function() {
+    document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "복지") {
         //정답 입력 시

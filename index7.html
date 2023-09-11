@@ -9,19 +9,17 @@
 
 <body>
   <div class="text-container" style="margin-top: 65%;">
-    <h2>
+    <h3>
       <span class="red-text">Q. 간판으로 유추해낼 수 있는<br>
       광운대학교 OO관은 무엇일까?</span>
-    </h2>
+      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
+    </h3>
   </div>
-
-  <button id="prev-button" class="slider-button">이전</button>
-  <button id="next-button" class="slider-button">다음</button>
-  <input type="text" id="text-input" class="input-box">
 
   <script>
     // 다음 버튼
-    document.getElementById("next-button").addEventListener("click", function() {
+    document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "복지") {
         //정답 입력 시

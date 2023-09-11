@@ -53,6 +53,17 @@
     text-align: center;
   }
 
+  #start-button {
+    display: block;
+    position: fixed;
+    bottom: 2%; /* 하단에 배치 */
+    left: 50%; /* 좌측에 배치 */
+    transform: translateX(-50%); /* 변환 해제 */
+    width: 30%; /* 너비를 늘림 */
+    height: 5%; /* 높이 자동으로 조정 */
+    text-align: center;
+  }
+
   .slider-button {
     position: fixed;
     bottom: 2%;

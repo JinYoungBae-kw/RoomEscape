@@ -81,8 +81,8 @@
     position: fixed;
     left: 50%; /* 좌측에 배치 */
     transform: translateX(-50%); /* 변환 해제 */
-    width: 30%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    width: 60%; /* 너비를 늘림 */
+    height: 4%; /* 높이 자동으로 조정 */
     margin-top: 5%;
     pointer-events: auto;
     color: white;
@@ -99,6 +99,7 @@
 
   .input-box {
     width: 75%; /* 너비 조정 */
+    margin-top: 7%;
     color: black;
     font-family : "HeirofLightRegular";
   }
@@ -109,9 +110,11 @@
 
   .red-text {
     color: rgb(176, 23, 23);
+    font-size: 130%;
   }
 
   .blue-text {
     color: rgb(51, 100, 255);
+    font-size: 130%;
   }
 }

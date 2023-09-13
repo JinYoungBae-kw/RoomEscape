@@ -4,17 +4,17 @@
   <link rel="stylesheet" href="all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>방탈출</title>
+  <title>광운 방탈출</title>
 </head>
 
 <body>
   <div class="text-container" style="margin-top: 30%;">
     <h3>
-      <span class="red-text">Q. 단서를 해석하시오.</span>
+      <span class="red-text" style="font-size: 100%;">Q. 단서를 해석하시오.</span>
     </h3>
     <img src="image/hint3.jpg" class="img_responsive">
-    <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
-      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
+    <input type="text" id= "text-input" class="input-box">
+      <button id="answer-button" class="text-center">입력</button>
   </div>
 
   <script>
@@ -23,16 +23,16 @@
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "비마관") {
         //정답 입력 시
-        window.location.href = "index18.html";
+        window.location.href = "index22.html";
       } else {
         //오답 입력 시
-        window.location.href = "index17-wrong.html";
+        window.location.href = "index21-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index16.html";
+      window.location.href = "index20.html";
     });
   </script>
 </body>

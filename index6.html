@@ -4,15 +4,15 @@
   <link rel="stylesheet" href="all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>방탈출</title>
+  <title>광운 방탈출</title>
 </head>
 
 <body>
   <div class="text-container" style="margin-top: 65%;">
     <h4>
-      <span class="red-text">Q. 바닥에 빛으로 비추어진 형상은 무엇인가?</span>
-      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
-      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
+      <span class="red-text" style="font-size: 100%;">Q. 바닥에 빛으로 비추어진 형상은 무엇인가?</span>
+      <input type="text" id="text-input" class="input-box">
+      <button id="answer-button" class="text-center">입력</button>
     </h4>
   </div>
 
@@ -22,16 +22,16 @@
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "비마") {
         // 정답 입력 시
-        window.location.href = "index5.html";
+        window.location.href = "index7.html";
       } else {
         // 오답 입력 시
-        window.location.href = "index4-wrong.html";
+        window.location.href = "index6-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index3-1.html";
+      window.location.href = "index5.html";
     });
   </script>
 </body>

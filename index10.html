@@ -4,15 +4,15 @@
   <link rel="stylesheet" href="all.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>방탈출</title>
+  <title>광운 방탈출</title>
 </head>
 
 <body>
   <div class="text-container" style="margin-top: 65%;">
     <h3>
-      <span class="red-text">Q. 간판으로 유추해낼 수 있는<br>
+      <span class="red-text" style="font-size: 100%;">Q. 간판으로 유추해낼 수 있는<br>
       광운대학교 OO관은 무엇일까?</span>
-      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+      <input type="text" id= "text-input" class="input-box">
       <button id="answer-button" class="text-center">입력</button>
     </h3>
   </div>
@@ -23,16 +23,16 @@
       var userInput = document.getElementById("text-input").value.toLowerCase();
       if (userInput === "복지") {
         //정답 입력 시
-        window.location.href = "index8.html";
+        window.location.href = "index11.html";
       } else {
         // 오답 입력 시
-        window.location.href = "index7-wrong.html";
+        window.location.href = "index10-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index6.html";
+      window.location.href = "index9.html";
     });
   </script>
 </body>

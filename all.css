@@ -83,10 +83,10 @@
     position: fixed;
     left: 50%; /* 좌측에 배치 */
     transform: translateX(-50%); /* 변환 해제 */
-    width: 50%; /* 너비를 늘림 */
-    height: 5%; /* 높이 자동으로 조정 */
+    width: 45%; /* 너비를 늘림 */
+    height: 7%; /* 높이 자동으로 조정 */
     pointer-events: auto;
-    margin-top: 7%;
+    margin-top: 10%;
     color: black;
     background-color: white;
     font-family : "HeirofLightBold";

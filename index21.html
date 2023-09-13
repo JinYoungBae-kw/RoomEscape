@@ -8,21 +8,11 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 10%;">
-    <h4>
-      <span class="red-text">
-        Q. 조광운 동상 뒤에 명패를 보고,<br>
-        도형이 있는 각 위치의<br>
-        자음/모음을 조합하여 단어를 만들어보자.
-      </span>
-    </h4>
-    <h4>
-      <span class="red-text">
-        [다른 사람의 ()에 () 기울여라.<br>
-        그 속에 ()의 ( ㅅ) 있을 것이다.]
-      </span>
-    </h4>
-    <img src="image/hint4.png" class="img_responsive">
+  <div class="text-container" style="margin-top: 30%;">
+    <h3>
+      <span class="red-text">Q. 단서를 해석하시오.</span>
+    </h3>
+    <img src="image/hint3.jpg" class="img_responsive">
     <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
       <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
   </div>
@@ -31,18 +21,18 @@
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "말귀행운씨아") {
+      if (userInput === "비마관") {
         //정답 입력 시
-        window.location.href = "index22.html";
+        window.location.href = "index18.html";
       } else {
         //오답 입력 시
-        window.location.href = "index21-wrong.html";
+        window.location.href = "index17-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index20.html";
+      window.location.href = "index16.html";
     });
   </script>
 </body>

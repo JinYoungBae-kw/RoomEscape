@@ -10,12 +10,10 @@
 <body>
   <div class="text-container" style="margin-top: 65%;">
     <h3>
-      <span class="red-text">
-        Q. 문자를 해석해보자.<br>
-        (복지관 OOO호 모두 입력하시오.)
-        <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
-        <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
-      </span>     
+      <span class="red-text">Q. 이 빈칸의 단어를 찾아서<br>
+      한 번 지도를 완성 시켜보자</span>
+      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
     </h3>
   </div>
 
@@ -23,18 +21,18 @@
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "복지관 203호") {
+      if (userInput === "복지") {
         //정답 입력 시
-        window.location.href = "index14.html";
+        window.location.href = "index10.html";
       } else {
         //오답 입력 시
-        window.location.href = "index13-wrong.html";
+        window.location.href = "index9-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index12.html";
+      window.location.href = "index8.html";
     });
   </script>
 </body>

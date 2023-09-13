@@ -8,32 +8,30 @@
 </head>
 
 <body>
-  <div class="text-container">
+  <div class="text-container" style="margin-top: 65%;">
     <h4>
-      이 소식은 전국 각지로 퍼져<br>
-      연촌으로 사람이 모이기 시작했다.
-    </h4>
-    <img src="image/message.png" class="img_responsive">
-    <h4>
-      나도 <span class="red-text" style="font-size: 130%;">연촌</span>으로 빨리 가야겠다.<br><br>
-      지금 여기 근처에서 <span class="red-text" style="font-size: 130%;">단서</span>를<br>
-      찾을 수도 있을지 몰라.<br><br>
-      한번 주변을 둘러볼까?<br><br>
+      <span class="red-text">Q. 바닥에 빛으로 비추어진 형상은 무엇인가?</span>
+      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
     </h4>
   </div>
 
-  <button id="prev-button" class="text-center">이전</button>
-  <button id="next-button" class="text-center">다음</button>
-
   <script>
-    // 다음 버튼
-    document.getElementById("next-button").addEventListener("click", function() {
-      window.location.href = "index6-1.html";
+    //입력 버튼
+    document.getElementById("answer-button").addEventListener("click", function() {
+      var userInput = document.getElementById("text-input").value.toLowerCase();
+      if (userInput === "비마") {
+        // 정답 입력 시
+        window.location.href = "index5.html";
+      } else {
+        // 오답 입력 시
+        window.location.href = "index4-wrong.html";
+      }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index5.html";
+      window.location.href = "index3-1.html";
     });
   </script>
 </body>

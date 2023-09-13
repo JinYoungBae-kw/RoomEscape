@@ -8,31 +8,33 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 30%;">
+  <div class="text-container" style="margin-top: 65%;">
     <h3>
-      <span class="red-text">Q. 단서를 해석하시오.</span>
+      <span class="red-text">
+        Q. 문자를 해석해보자.<br>
+        (복지관 OOO호 모두 입력하시오.)
+        <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
+        <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
+      </span>     
     </h3>
-    <img src="image/hint3.jpg" class="img_responsive">
-    <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
-      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
   </div>
 
   <script>
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "비마관") {
+      if (userInput === "복지관 203호") {
         //정답 입력 시
-        window.location.href = "index18.html";
+        window.location.href = "index14.html";
       } else {
         //오답 입력 시
-        window.location.href = "index17-wrong.html";
+        window.location.href = "index13-wrong.html";
       }
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index16.html";
+      window.location.href = "index12.html";
     });
   </script>
 </body>

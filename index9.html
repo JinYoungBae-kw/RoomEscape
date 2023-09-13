@@ -8,31 +8,30 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 65%;">
-    <h3>
-      <span class="red-text">Q. 이 빈칸의 단어를 찾아서<br>
-      한 번 지도를 완성 시켜보자</span>
-      <input type="text" id= "text-input" class="input-box" style="margin-top: 7%;">
-      <button id="answer-button" class="text-center" style="margin-top: 5%;">입력</button>
-    </h3>
+  <div class="text-container" style="margin-top: 30%;">
+    <h4>
+      <span class="red-text" style="font-size: 130%;">버스 정류장</span> 쪽으로 이동하여<br>
+      왼쪽을 바라보면 뭔가 있을 것 같다.
+    </h4>
+    <img src="image/neonsign.jpg" class="img_responsive">
+    <h4>
+      <span class="red-text" style="font-size: 130%;">간판</span>들을 자세히 살펴보니 <span class="red-text" style="font-size: 130%;">글자</span>들이<br>
+      유독 밝게 빛나고 있는 것 같다.
+    </h4>
   </div>
+
+  <button id="prev-button" class="text-center">이전</button>
+  <button id="next-button" class="text-center">다음</button>
 
   <script>
     // 다음 버튼
-    document.getElementById("answer-button").addEventListener("click", function() {
-      var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "복지") {
-        //정답 입력 시
-        window.location.href = "index10.html";
-      } else {
-        //오답 입력 시
-        window.location.href = "index9-wrong.html";
-      }
+    document.getElementById("next-button").addEventListener("click", function() {
+      window.location.href = "index7.html";
     });
 
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index8.html";
+      window.location.href = "index6.html";
     });
   </script>
 </body>

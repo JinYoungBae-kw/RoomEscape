@@ -8,10 +8,11 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 65%;">
+  <div class="text-container" style="margin-top: 60%;">
     <h3>
       <span class="red-text" style="font-size: 100%;">Q. 간판으로 유추해낼 수 있는<br>
-      광운대학교 OO관은 무엇일까?</span>
+      광운대학교 OO관은 무엇일까?<br><br>
+      ['OO관' 모두 적으시오]</span>
       <input type="text" id= "text-input" class="input-box">
       <button id="answer-button" class="text-center">입력</button>
     </h3>
@@ -21,18 +22,13 @@
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "복지") {
+      if (userInput === "복지관") {
         //정답 입력 시
         window.location.href = "index11.html";
       } else {
         // 오답 입력 시
         window.location.href = "index10-wrong.html";
       }
-    });
-
-    // 이전 버튼
-    document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index9.html";
     });
   </script>
 </body>

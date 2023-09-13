@@ -11,8 +11,8 @@
   <div class="text-container" style="margin-top: 65%;">
     <h3>
       <span class="red-text" style="font-size: 100%;">
-        Q. 문자를 해석해보자.<br>
-        (복지관 OOO호 모두 입력하시오.)
+        Q. 의료시설의 위치는?<br><br>
+        [OOO OOO]
         <input type="text" id= "text-input" class="input-box">
         <button id="answer-button" class="text-center">입력</button>
       </span>     
@@ -23,18 +23,13 @@
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "복지관 203호") {
+      if (userInput === "복지관 203") {
         //정답 입력 시
         window.location.href = "index18.html";
       } else {
         //오답 입력 시
         window.location.href = "index17-wrong.html";
       }
-    });
-
-    // 이전 버튼
-    document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index16.html";
     });
   </script>
 </body>

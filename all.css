@@ -30,8 +30,8 @@
   }
 
   .img_responsive {
-    width: 70%; /* 화면 너비에 맞게 이미지 너비 설정 */
-    height: 70%; /* 이미지 높이 자동으로 조정 */
+    width: 80%; /* 화면 너비에 맞게 이미지 너비 설정 */
+    height: 80%; /* 이미지 높이 자동으로 조정 */
   }
 
   .text-container {
@@ -59,8 +59,9 @@
     pointer-events: auto;
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
-    font-family : "HeirofLightRegular";
+    font-family : "HeirofLightBold";
     font-size: 15px; /* 원하는 크기로 조절하세요 */
+    white-space: nowrap;
   }
 
   #next-button {
@@ -74,8 +75,9 @@
     pointer-events: auto;
     color: rgb(21, 39, 69);
     background-color: rgb(224, 200, 152);
-    font-family : "HeirofLightRegular";
+    font-family : "HeirofLightBold";
     font-size: 15px; /* 원하는 크기로 조절하세요 */
+    white-space: nowrap;
   }
 
   #start-button {
@@ -95,7 +97,6 @@
     border: none;
     box-shadow: 8px 8px 12px 2px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
-    font-weight: bold;;
   }
 
   #answer-button {
@@ -103,8 +104,8 @@
     position: fixed;
     left: 50%; /* 좌측에 배치 */
     transform: translateX(-50%); /* 변환 해제 */
-    width: 60%; /* 너비를 늘림 */
-    height: 4%; /* 높이 자동으로 조정 */
+    width: 50%; /* 너비를 늘림 */
+    height: 5%; /* 높이 자동으로 조정 */
     margin-top: 5%;
     pointer-events: auto;
     color: white;

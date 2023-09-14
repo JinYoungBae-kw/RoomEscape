@@ -8,13 +8,15 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 30%;">
+  <div class="text-container" style="margin-top: 60%;">
     <h3>
-      <span class="red-text" style="font-size: 100%;">Q. 단서를 해석하시오.</span>
-    </h3>
-    <img src="image/hint3.jpg" class="img_responsive">
-    <input type="text" id= "text-input" class="input-box">
+      <span class="red-text" style="font-size: 100%;">
+        Q. 단서를 해석하면 비마의<br>
+        행방을 유추할 수 있을 것 같다.
+      </span>
+      <input type="text" id= "text-input" class="input-box">
       <button id="answer-button" class="text-center">입력</button>
+    </h3>
   </div>
 
   <script>
@@ -28,11 +30,6 @@
         //오답 입력 시
         window.location.href = "index21-wrong.html";
       }
-    });
-
-    // 이전 버튼
-    document.getElementById("prev-button").addEventListener("click", function() {
-      window.location.href = "index20.html";
     });
   </script>
 </body>

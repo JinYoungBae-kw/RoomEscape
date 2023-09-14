@@ -20,6 +20,11 @@
     font-family : "ZiTiQuanWeiJunHei-W3-2";
   }
 
+  @font-face{
+    src:url("fonts/인천교육자람.ttf");
+    font-family : "인천교육자람";
+  }
+
   body {
     overflow-y: auto; /* 스크롤바 숨기기 */
     position: relative;
@@ -142,7 +147,7 @@
   }
 
   .blue-text {
-    color: rgb(51, 100, 255);
+    color: rgb(29, 32, 134);
     font-size: 130%;
   }
 

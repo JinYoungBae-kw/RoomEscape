@@ -19,6 +19,14 @@
     </h2>
   </div>
 
+  <div id="hint-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-hint-popup">&times;</span>
+      힌트 페이지<br>
+      힌트 페이지 입니다.
+    </div>
+  </div>
+
   <script>
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
@@ -30,6 +38,18 @@
         //오답 입력 시
         window.location.href = "index17-wrong.html";
       }
+    });
+
+    // hint-button 클릭 시 팝업 열기
+    document.getElementById("hint-button").addEventListener("click", function() {
+      var hintPopup = document.getElementById("hint-popup");
+      hintPopup.style.display = "block";
+    });
+
+    // close-hint-popup 버튼 클릭 시 팝업 닫기
+    document.getElementById("close-hint-popup").addEventListener("click", function() {
+      var hintPopup = document.getElementById("hint-popup");
+      hintPopup.style.display = "none";
     });
   </script>
 </body>

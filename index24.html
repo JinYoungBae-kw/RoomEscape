@@ -8,33 +8,86 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 15%;">
-    <h4 style="margin-bottom: 5%;">
-      "에잇!<br><br>
-      역시 말이 내 말을 들어줄 리가 없나..<br>
-      어떡하지.. 큰일이다'<br><br>
-      그렇게 돌아가려는 순간,
-    </h4>
-    <img src="image/bisuk.png" class="img_responsive">
-    <h4>
-      비마는 <span class="red-text"><span class="hanja">故</span>조광운 동상</span>의<br>
-      뒷부분을 쳐다보는데,<br>
-      글자가 조금 특이한 것 같다.
-    </h4>
+  <div class="text-container" style="margin-top: 22%;">
+    <h3 style="margin-bottom: 0%;">
+      <span class="red-text" style="font-size: 100%;">
+        Q. 비석을 보고, 도형이 있는 각 위치의<br>
+        자음/모음을 조합하여 단어를 만들어<br>
+        순서대로 적어보자.<br>
+        <span style="font-size: 70%">[다른 사람의 ( )에 ( )기울여라<br>
+        그 속에 ( )의 씨앗이 있을 것이다.]<br><br></span>
+        <span style="font-size: 70%">[ 답: O O OO ]<br></span>
+      </span>
+      <img src="image/bisuk-q.png" class="img_responsive">
+      <input type="text" id= "text-input" class="input-box">
+      <button id="hint-button" class="text-center">?</button>
+      <button id="answer-button" class="text-center">입력</button>
+    </h3>
   </div>
 
-  <button id="prev-button" class="text-center">이전</button>
-  <button id="next-button" class="text-center">다음</button>
+  <button id="prev-button" class="text-center" style="left: 50%; transform: translateX(-50%);">이전</button>
+
+  <div id="hint-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-hint-popup">&times;</span>
+      <h4 style="margin-top: 2%;">
+        "항상"의 초성/중성/종성 색깔에 따라<br>
+        순서대로 각각에 맞는 자음, 모음을 찾아서<br>
+        단어를 만들면 될 것 같다.<br>
+        [총학 비대위 공식계정 인스타툰 참고.]
+      </h4>
+    </div>
+  </div>
+
+  <div id="wrong-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-wrong-popup">&times;</span>
+      <h3 style="margin-top: 7%;">
+        <span class="red-text" style="font-size: 100%;">
+          오답입니다!<br>
+          <span style="font-size: 90%;">
+            (왼쪽 위 "?" 버튼을 눌러보세요!)
+          </span>
+        </span>
+      </h3>
+    </div>
+  </div>
 
   <script>
-    // 다음 버튼
-    document.getElementById("next-button").addEventListener("click", function() {
-      window.location.href = "index25.html";
-    });
-
     // 이전 버튼
     document.getElementById("prev-button").addEventListener("click", function() {
       window.location.href = "index23.html";
+    });
+
+    // 다음 버튼
+    document.getElementById("answer-button").addEventListener("click", function() {
+      var userInput = document.getElementById("text-input").value.toLowerCase();
+      if (userInput === "말 귀 행운" || userInput === "말귀행운") {
+        //정답 입력 시
+        window.location.href = "index25.html";
+      } else {
+        //오답 입력 시
+        var wrogPopup = document.getElementById("wrong-popup");
+        wrogPopup.style.display = "block";
+      }
+    });
+
+    // hint-button 클릭 시 팝업 열기
+    document.getElementById("hint-button").addEventListener("click", function() {
+      var hintPopup = document.getElementById("hint-popup");
+      hintPopup.style.display = "block";
+    });
+
+    // close-hint-popup 버튼 클릭 시 팝업 닫기
+    document.getElementById("close-hint-popup").addEventListener("click", function() {
+      var hintPopup = document.getElementById("hint-popup");
+      hintPopup.style.display = "none";
+    });
+
+    // close-wrong-popup 버튼 클릭 시 팝업 닫기
+    document.getElementById("close-wrong-popup").addEventListener("click", function() {
+      var wrongPopup = document.getElementById("wrong-popup");
+      wrongPopup.style.display = "none";
     });
   </script>
 </body>

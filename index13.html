@@ -9,32 +9,59 @@
 
 <body>
   <div class="text-container" style="margin-top: 65%;">
-    <h3>
+    <h2>
       <span class="red-text" style="font-size: 100%;">Q. 이 빈칸의 단어를 찾아서<br>
-      한 번 지도를 완성 시켜보자</span>
+        지도를 완성 시켜보자<br>
+        <span style="font-size: 60%">[ 답: OO OOO ]<br></span>
+      </span>
       <input type="text" id= "text-input" class="input-box">
+      <button id="hint-button" class="text-center">?</button>
       <button id="answer-button" class="text-center">입력</button>
-    </h3>
+    </h2>
   </div>
+
+  <button id="prev-button" class="text-center" style="left: 50%; transform: translateX(-50%);">이전</button>
 
   <div id="hint-popup" class="popup">
     <div class="popup-content">
       <span class="close-button" id="close-hint-popup">&times;</span>
-      힌트 페이지<br>
-      힌트 페이지 입니다.
+      <h3 style="margin-top: 7%;">
+        빨간 표시 되어있는 공간으로 가면<br>
+        바로 답이 보일 것 같다.
+      </h3>
+    </div>
+  </div>
+
+  <div id="wrong-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-wrong-popup">&times;</span>
+      <h3 style="margin-top: 7%;">
+        <span class="red-text" style="font-size: 100%;">
+          오답입니다!<br>
+          <span style="font-size: 90%;">
+            (왼쪽 위 "?" 버튼을 눌러보세요!)
+          </span>
+        </span>
+      </h3>
     </div>
   </div>
 
   <script>
+    // 이전 버튼
+    document.getElementById("prev-button").addEventListener("click", function() {
+      window.location.href = "index12.html";
+    });
+
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "안정해짐") {
+      if (userInput === "빛우 화이팅") {
         //정답 입력 시
         window.location.href = "index14.html";
       } else {
         //오답 입력 시
-        window.location.href = "index13-wrong.html";
+        var wrogPopup = document.getElementById("wrong-popup");
+        wrogPopup.style.display = "block";
       }
     });
 
@@ -48,6 +75,12 @@
     document.getElementById("close-hint-popup").addEventListener("click", function() {
       var hintPopup = document.getElementById("hint-popup");
       hintPopup.style.display = "none";
+    });
+    
+    // close-wrong-popup 버튼 클릭 시 팝업 닫기
+    document.getElementById("close-wrong-popup").addEventListener("click", function() {
+      var wrongPopup = document.getElementById("wrong-popup");
+      wrongPopup.style.display = "none";
     });
   </script>
 </body>

@@ -8,50 +8,31 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 60%;">
-    <h3>
-      <span class="red-text" style="font-size: 100%;">
-        Q. 단서를 해석하면 비마의<br>
-        행방을 유추할 수 있을 것 같다.
-      </span>
-      <input type="text" id= "text-input" class="input-box">
-      <button id="answer-button" class="text-center">입력</button>
-    </h3>
+  <div class="text-container" style="margin-top: 25%">
+    <h2>
+      "엇..? 비마관?!"<br><br>
+      "비마관이 그럼 진정으로<br>
+      비마가 있는 공간인건가?"
+    </h2>
+    <img src="image/bima.png" class="img_responsive">
+    <h2>
+      <span class="red-text">비마관</span>으로 이동해보자.
+    </h2>
   </div>
 
-  <div id="hint-popup" class="popup">
-    <div class="popup-content">
-      <span class="close-button" id="close-hint-popup">&times;</span>
-      힌트 페이지<br>
-      힌트 페이지 입니다.
-    </div>
-  </div>
+  <button id="prev-button" class="text-center">이전</button>
+  <button id="next-button" class="text-center">다음</button>
 
   <script>
     // 다음 버튼
-    document.getElementById("answer-button").addEventListener("click", function() {
-      var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "비마관") {
-        //정답 입력 시
-        window.location.href = "index22.html";
-      } else {
-        //오답 입력 시
-        window.location.href = "index21-wrong.html";
-      }
+    document.getElementById("next-button").addEventListener("click", function() {
+      window.location.href = "index22.html";
     });
 
-    // hint-button 클릭 시 팝업 열기
-    document.getElementById("hint-button").addEventListener("click", function() {
-      var hintPopup = document.getElementById("hint-popup");
-      hintPopup.style.display = "block";
+    // 이전 버튼
+    document.getElementById("prev-button").addEventListener("click", function() {
+      window.location.href = "index20.html";
     });
-
-    // close-hint-popup 버튼 클릭 시 팝업 닫기
-    document.getElementById("close-hint-popup").addEventListener("click", function() {
-      var hintPopup = document.getElementById("hint-popup");
-      hintPopup.style.display = "none";
-    });
-  </script>
   </script>
 </body>
 </html>

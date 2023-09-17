@@ -8,51 +8,36 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 25%;">
-    <h4 style="margin-bottom: 0%;">
-      <span class="red-text" style="font-size: 100%;">
-        Q. 명패를 보고, 도형이 있는 각 위치의<br>
-        자음/모음을 조합하여 단어를 만들어보자.<br><br>
-        [다른 사람의 ( )에 ( )기울여라<br>
-        그 속에 ( )의 씨앗이 있을 것이다.]
+  <div class="text-container" style="margin-top: 15%;">
+    <h3>
+      "말에 귀 기울여..? 행운의 씨앗..?"<br>
+      .<br>
+      .<br>
+      "이게 무슨 뜻입니까?!"
+    </h3>
+    <img src="image/team.png" class="img_responsive" style="width: 55%; height: 55%;">
+    <h3>
+      <span class="blue-text" style="font-size: 94%;">
+        "뜻을 모은다는 것이 본인의 뜻만 내세우면<br>
+        어찌 그것이 모이는 것이겠느냐.."<br><br>
       </span>
-      <img src="image/bisuk-q.png" class="img_responsive">
-      <input type="text" id= "text-input" class="input-box">
-      <button id="answer-button" class="text-center">입력</button>
-    </h4>
+      그 말을 들은 나는 부끄러워<br>
+      아무 것도 할 수 없었다...
+    </h3>
   </div>
 
-  <div id="hint-popup" class="popup">
-    <div class="popup-content">
-      <span class="close-button" id="close-hint-popup">&times;</span>
-      힌트 페이지<br>
-      힌트 페이지 입니다.
-    </div>
-  </div>
+  <button id="prev-button" class="text-center">이전</button>
+  <button id="next-button" class="text-center">다음</button>
 
   <script>
     // 다음 버튼
-    document.getElementById("answer-button").addEventListener("click", function() {
-      var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "말귀행운") {
-        //정답 입력 시
-        window.location.href = "index26.html";
-      } else {
-        //오답 입력 시
-        window.location.href = "index25-wrong.html";
-      }
+    document.getElementById("next-button").addEventListener("click", function() {
+      window.location.href = "index26.html";
     });
 
-    // hint-button 클릭 시 팝업 열기
-    document.getElementById("hint-button").addEventListener("click", function() {
-      var hintPopup = document.getElementById("hint-popup");
-      hintPopup.style.display = "block";
-    });
-
-    // close-hint-popup 버튼 클릭 시 팝업 닫기
-    document.getElementById("close-hint-popup").addEventListener("click", function() {
-      var hintPopup = document.getElementById("hint-popup");
-      hintPopup.style.display = "none";
+    // 이전 버튼
+    document.getElementById("prev-button").addEventListener("click", function() {
+      window.location.href = "index24.html";
     });
   </script>
 </body>

@@ -8,26 +8,50 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 60%;">
+  <div class="text-container" style="margin-top: 65%;">
     <h2>
       <span class="red-text" style="font-size: 100%;">
         Q. 의료시설의 위치는?<br>
-        [OOO OOO]
+        <span style="font-size: 60%">답: [ OOO OOO ]</span>
         <input type="text" id= "text-input" class="input-box">
+        <button id="hint-button" class="text-center">?</button>
         <button id="answer-button" class="text-center">입력</button>
       </span>     
     </h2>
   </div>
 
+  <button id="prev-button" class="text-center" style="left: 50%; transform: translateX(-50%);">이전</button>
+
   <div id="hint-popup" class="popup">
     <div class="popup-content">
       <span class="close-button" id="close-hint-popup">&times;</span>
-      힌트 페이지<br>
-      힌트 페이지 입니다.
+      <h3 style="margin-top: 7%;">
+        글자 옆에 거울을 두면 바로 알 수<br>
+        있을 것 같다.
+      </h3>
+    </div>
+  </div>
+
+  <div id="wrong-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-wrong-popup">&times;</span>
+      <h3 style="margin-top: 7%;">
+        <span class="red-text" style="font-size: 100%;">
+          오답입니다!<br>
+          <span style="font-size: 90%;">
+            (왼쪽 위 "?" 버튼을 눌러보세요!)
+          </span>
+        </span>
+      </h3>
     </div>
   </div>
 
   <script>
+    // 이전 버튼
+    document.getElementById("prev-button").addEventListener("click", function() {
+      window.location.href = "index16.html";
+    });
+
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
@@ -36,7 +60,8 @@
         window.location.href = "index18.html";
       } else {
         //오답 입력 시
-        window.location.href = "index17-wrong.html";
+        var wrogPopup = document.getElementById("wrong-popup");
+        wrogPopup.style.display = "block";
       }
     });
 
@@ -50,6 +75,12 @@
     document.getElementById("close-hint-popup").addEventListener("click", function() {
       var hintPopup = document.getElementById("hint-popup");
       hintPopup.style.display = "none";
+    });
+
+    // close-wrong-popup 버튼 클릭 시 팝업 닫기
+    document.getElementById("close-wrong-popup").addEventListener("click", function() {
+      var wrongPopup = document.getElementById("wrong-popup");
+      wrongPopup.style.display = "none";
     });
   </script>
 </body>

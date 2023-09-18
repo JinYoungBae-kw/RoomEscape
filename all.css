@@ -94,7 +94,7 @@
     width: 50%; /* 너비를 늘림 */
     height: 7%; /* 높이 자동으로 조정 */
     pointer-events: auto;
-    margin-top: 10%;
+    margin-top: 12%;
     color: black;
     background-color: white;
     font-family : "HeirofLightBold";
@@ -194,7 +194,7 @@
   width: 300px; /* 원하는 너비로 설정하세요 */
   height: 100px; /* 원하는 높이로 설정하세요 */
   position: fixed;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;

@@ -8,16 +8,16 @@
 </head>
 
 <body>
-  <div class="text-container" style="margin-top: 65%;">
-    <h2>
-      <span class="red-text" style="font-size: 100%;">Q. 이 빈칸의 단어를 찾아서<br>
-        지도를 완성 시켜보자<br>
-        <span style="font-size: 60%">[ 답: OO OOO ]<br></span>
+  <div class="text-container" style="margin-top: 60%;">
+    <h3>
+      <span class="red-text" style="font-size: 100%;">Q. 우니가 광운대학교 학생들을<br>
+        부르는 호칭은 무엇인가요?<br><br>
+        <span style="font-size: 60%">[ 답: OO ]<br></span>
       </span>
       <input type="text" id= "text-input" class="input-box">
       <button id="hint-button" class="text-center">?</button>
       <button id="answer-button" class="text-center">입력</button>
-    </h2>
+    </h3>
   </div>
 
   <button id="prev-button" class="text-center" style="left: 50%; transform: translateX(-50%);">이전</button>
@@ -35,11 +35,11 @@
   <div id="wrong-popup" class="popup">
     <div class="popup-content">
       <span class="close-button" id="close-wrong-popup">&times;</span>
-      <h3 style="margin-top: 7%;">
-        <span class="red-text" style="font-size: 100%;">
+      <h3 style="margin-top: 6%;">
+        <span class="red-text" style="font-size: 120%;">
           오답입니다!<br>
-          <span style="font-size: 90%;">
-            (왼쪽 위 "?" 버튼을 눌러보세요!)
+          <span style="font-size: 70%;">
+            힌트: 왼쪽 위 [?] 버튼을 눌러보세요!
           </span>
         </span>
       </h3>
@@ -55,7 +55,7 @@
     // 다음 버튼
     document.getElementById("answer-button").addEventListener("click", function() {
       var userInput = document.getElementById("text-input").value.toLowerCase();
-      if (userInput === "빛우 화이팅" || userInput === "빛우 파이팅") {
+      if (userInput === "빛우") {
         //정답 입력 시
         window.location.href = "index14.html";
       } else {
